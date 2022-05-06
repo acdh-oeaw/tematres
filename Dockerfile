@@ -13,8 +13,7 @@ RUN git clone --branch v3.3 --single-branch https://github.com/tematres/TemaTres
     chown -R www-data:www-data /var/www/html 
 RUN sed -i 's|"localhost"|getenv("DB_HOST")|g' /var/www/html/vocab/db.tematres.php && \
     sed -i 's|"root"|getenv("DB_USER")|g' /var/www/html/vocab/db.tematres.php && \
-    sed -i 's|"pass"|getenv("DB_PASS")|g' /var/www/html/vocab/db.tematres.php && \
-    service apache2 restart
+    sed -i 's|"pass"|getenv("DB_PASS")|g' /var/www/html/vocab/db.tematres.php 
 
 EXPOSE 443
      
