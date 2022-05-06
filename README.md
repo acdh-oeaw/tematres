@@ -1,4 +1,4 @@
-# TemaTres : The way to manage formal representations of knowledge TemaTres
+# TemaTres : The way to manage formal representations of knowledge
 
 A Docker image for https://github.com/tematres/TemaTres-Vocabulary-Server
 
